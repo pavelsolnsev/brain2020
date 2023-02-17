@@ -1,0 +1,31 @@
+.popup-speakers {
+
+	@media ( max-width: 700px ) {
+
+		&__content {
+			flex-direction: column;
+		}
+
+		&__img {
+			margin: 0 auto;
+		}
+
+		&__info {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+	@media ( max-width: 425px ) {
+		padding: 50px 30px;
+	}
+}
+
+
+
+
+
+
+
+
+

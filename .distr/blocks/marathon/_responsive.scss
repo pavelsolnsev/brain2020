@@ -1,0 +1,102 @@
+@media (max-width: 1800px) {
+  .marathon__main {
+    transform: none;
+  }
+  .marathon__about-emblem,
+  .marathon__about-year,
+  .marathon__brain-image,
+  .marathon__brain-emblem {
+    width: 155px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .marathon__main {
+    max-width: 100%;
+    border: none;
+  }
+  .marathon__about-emblem,
+  .marathon__about-year,
+  .marathon__brain-image,
+  .marathon__brain-emblem {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .marathon__about-desc {
+    font-size: 23px;
+    line-height: 34px;
+  }
+
+  .marathon__brain-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .marathon__about {
+    padding: 110px 50px 90px;
+  }
+}
+
+@media (max-width: 992px) {
+  .marathon__main {
+    display: block;
+  }
+  .marathon__about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 34px 46px;
+    border-right: none;
+    border-bottom: 2px solid #2B79E5;
+  }
+  .marathon__about-title {
+    width: 35%;
+    max-width: 207px;
+    margin-bottom: 30px;
+  }
+  .marathon__about-desc {
+    margin-bottom: 0;
+    width: 65%;
+    margin-top: -7px;
+  }
+  .marathon__brain {
+    width: 100%;
+    padding: 33px 34px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .marathon__about-title {
+    max-width: 180px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .marathon__about-desc {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .marathon__brain-desc_part {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .marathon__about {
+    display: block;
+    border: none;
+    padding: 49px 15px 0;
+  }
+  .marathon__brain {
+    padding: 15px 15px 40px;
+  }
+  .marathon__about-title {
+    max-width: none;
+    width: 100%;
+  }
+  .marathon__about-desc {
+    width: 100%;
+    margin-top: 17px;
+  }
+}

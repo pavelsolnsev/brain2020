@@ -1,0 +1,22 @@
+.popup-map {
+	border-radius: 15px;
+	padding: 35px;
+	position: relative;
+	&_close{
+		position: absolute;
+		content: "";
+		top: 0px;
+		right: 0;
+		width: 45px;
+		height: 45px;
+		background-image: url("../img/popup-map/close-black.png");
+		background-repeat: no-repeat;
+		-webkit-background-size: 12px auto;
+		background-size: 12px auto;
+		background-position: 50% 50%;
+		z-index: 2;
+	}
+}
+
+
+

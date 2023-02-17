@@ -1,0 +1,57 @@
+.regular { font-family: 'Mont', 'Helvetica Neue', Helvetica, sans-serif; }
+.xcondensed { font-family: 'Mont', 'Helvetica Neue', Helvetica, sans-serif; }
+.condensed { font-family: 'Mont', 'Helvetica Neue', Helvetica, sans-serif; }
+
+/* .regular { font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif; }
+.xcondensed { font-family: 'Proxima Nova ExCn', 'Helvetica Neue', Helvetica, sans-serif; }
+.condensed { font-family: 'Proxima Nova Cn', 'Helvetica Neue', Helvetica, sans-serif; } */
+
+.condensed {
+	font-weight: 900;
+	line-height: 0.82;
+}
+.xcondensed {
+	font-weight: 900;
+	line-height: 0.8;
+	/* letter-spacing: -0.03em; */
+}
+
+.currency {
+	font-size: 85%;
+	font-family: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.fw-bold { font-weight: bold; }
+.fw-xbold { font-weight: 800; }
+.fw-black { font-weight: 900; }
+.fw-normal { font-weight: normal; }
+.fw-light { font-weight: 300; }
+
+.sup {
+	vertical-align: super;
+}
+
+.text-gradient {
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent;
+	background-size: 0 0 !important;
+	-webkit-background-size: contain !important;
+}
+
+.title {
+	color: $blue;
+	font-size: 90px;
+	font-weight: 900;
+	font-family: $font-condensed;
+	letter-spacing: -0.03em;
+	line-height: 1;
+
+	@media (max-width: 991px) {
+		font-size: 80px;
+	} // 991
+
+	@media (max-width: 767px) {
+		font-size: 45px;
+	} // 767
+
+}

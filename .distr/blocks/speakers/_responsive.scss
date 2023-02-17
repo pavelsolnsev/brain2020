@@ -1,0 +1,175 @@
+@media (max-width: 1800px) {
+  .speakers__list-item-add {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .speakers__list {
+    border-left: none;
+  }
+  .speakers__list-item-add {
+    display: none;
+  }
+  .speakers__list-item {
+    min-height: 500px;
+
+    &:not(.speakers__list-item_panel) {
+      border-right: none;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(3n + 2) {
+      border-right: 2px solid #2B79E5;
+      border-left: 2px solid #2B79E5;
+    }
+
+    &_even {
+      border-right: none !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .speakers__list-item {
+    width: 50%;
+
+    &:nth-of-type(2), &:nth-of-type(3n + 2) {
+      border-right: none;
+      border-left: none;
+    }
+
+    &:nth-of-type(2n+1) {
+      border-right: 2px solid #2B79E5;
+    }
+
+    // &:nth-of-type(17) {
+    //   border-right: 2px solid #2B79E5;
+    // }
+  }
+  .speakers__list-item_last{
+    display: none;
+  }
+
+  .speakers__list-item_even {
+    width: 50%;
+    padding: 31px 36px;
+
+    .speakers__list-item-photo {
+
+      padding: 0;
+      background: none;
+      text-align: left;
+      margin: 0;
+
+      &_1 {
+        display: none;
+      }
+
+      &_2 {
+        display: block;
+      }
+      &_tablet {
+        display: none;
+      }
+    }
+
+    .speakers__list-item-text {
+      margin: 37px 0 0 0;
+    }
+  }
+
+  .speakers__list-item {
+    &_odd {
+      width: 100%;
+    }
+    &_odd & {
+      &-photo  {
+        &_tablet {
+          display: block;
+        }
+        &_desktop {
+          display: none;
+        }
+        &_2 {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .speakers__list-item {
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .speakers__title {
+    padding: 24px 15px 27px;
+  }
+  .speakers__list-item {
+    padding: 15px 15px 18px;
+  }
+  .speakers__list-item-text {
+    margin-top: 15px;
+  }
+  .speakers__list-item-name {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .speakers__list-item_panel {
+    .speakers__list-item-name {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .speakers__list-item-info {
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .speakers__more {
+    padding-top: 22px;
+    padding-bottom: 45px;
+  }
+
+  .speakers__list-item_even {
+
+    .speakers__list-item-text {
+      margin-top: 15px;
+    }
+  }
+}
+
+.lang-en {
+  .speakers {
+    @media (max-width: 992px) {
+      &__list {
+        justify-content: center;
+        &-item {
+          &_border {
+            border-left: 2px solid #2B79E5;
+          }
+          &:nth-of-type(2n) {
+            border-left: none;
+          }
+          &:nth-of-type(2n+1) {
+            border-right: 2px solid #2B79E5;
+          }
+        }
+      }
+    }
+  }
+}

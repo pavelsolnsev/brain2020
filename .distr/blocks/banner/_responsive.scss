@@ -1,0 +1,86 @@
+.banner {
+    @media (max-width: 1199px) {
+        &__title {
+            font-size: 35.0149px;
+            line-height: 45px;
+        }
+        &__content {
+            &-list {
+                li {
+                    p {
+                        font-size: 13.4146px;
+                        line-height: 124%;
+                    }
+                }
+            }
+            &-title {
+                font-size: 41.6315px;
+                line-height: 107%;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        &__content {
+            &-list {
+                li {
+                    max-width: 50%;
+                    flex: 0 0 50%;
+                }
+            }
+            &-text {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__title {
+            font-size: 25px;
+            line-height: 32px;
+        }
+        &__content {
+            &-list {
+                margin: 0;
+                li {
+                    max-width: 50%;
+                    flex: 0 0 50%;
+                    padding: 20px 0;
+                    p {
+                        padding-left: 60px;
+                    }
+                }
+            }
+
+            &-title {
+                font-size: 20px;
+                line-height: 107%;
+            }
+
+            &-text {
+                br {
+                    display: none;
+                }
+                font-size: 25px;
+                line-height: 130%;
+            }
+        }
+    }
+    
+    @media (max-width: 575px) {
+        &__content {
+            &-list {
+                margin-bottom: 15px;
+                li {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+               
+            }
+        }
+
+    }
+    @media (max-width: 359px) {
+    }
+}

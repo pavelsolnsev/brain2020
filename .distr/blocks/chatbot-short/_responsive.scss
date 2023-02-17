@@ -1,0 +1,98 @@
+@media (max-width: 1280px) {
+    .chatbot-short {
+        &__wrapper {
+            border: none;
+        }
+        &__qr {
+            border-right: none;
+        }
+        &__text-text{
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .chatbot-short {
+        // padding: 24px 0;
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__whatsapp img{
+            max-width: 35px;
+        }
+        &__text {
+            max-width: 715px;
+            &-text {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        &__qr {
+            max-width: 220px;
+            padding-right: 0;
+            padding-left: 15px;
+        }
+        .button {
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .chatbot-short {
+        &__wrapper {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+        &__whatsapp {
+            margin: 0 auto 20px;
+        }
+        &__text {
+            max-width: 300px;
+            margin: 0;
+            padding: 25px 0 5px;
+            &-text {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+        &__qr {
+            width: 100%;
+            max-width: 100%;
+            border-left: none;
+            padding: 0;
+            &-img {
+                max-width: 250px;
+            }
+            &-button {
+                max-width: 100%;
+                &_text{
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .chatbot-short {
+        &__qr-img{
+            display: none;
+        }
+        &__qr-button{
+            p{
+                display: none;
+            }
+            a{
+                display: flex;
+                margin: 20px auto 15px;
+                padding: 0 20px;
+                background-color: #25d366;
+            }
+        }
+    }
+}

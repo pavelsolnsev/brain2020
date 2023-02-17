@@ -1,0 +1,159 @@
+.header {
+	width: 100%;
+	max-width: 1920px;
+	position: fixed;
+	left: auto;
+	right: auto;
+	top: 0;
+	z-index: 20;
+	color: #1C1E2C;
+	margin: 0 auto;
+	border-bottom: 2px solid #2B79E5;
+
+	.compensate-for-scrollbar & {
+		padding-right: 17px;
+	}
+
+	&__top {
+		background: #FFFFFF;
+		box-shadow: 3px 0px 18px rgba(24, 19, 92, 0.42);
+	}
+	&__bottom {
+		background: #190543;
+		.page-short & {
+			display: none;
+		}
+	}
+
+	&__row {
+		display: flex;
+		transition: 0.3s;
+		&_1 {
+			min-height: 66px;
+		}
+		&_2 {
+			min-height: 60px;
+		}
+
+		.page-scrolled & {
+			min-height: 36px;
+		}
+	}
+
+	&__toggle-popup {
+		width: auto;
+		min-height: 100%;
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 1;
+		margin-right: 20px;
+		i {
+			font-size: 18px;
+		}
+		.icon-menu-close {
+			position: absolute;
+			left: -9999px;
+			.page-menu-opened & {
+				position: static;
+			}
+		}
+		.page-menu-opened & .icon-menu {
+			position: absolute;
+			left: -9999px;
+		}
+
+		.page-short & {
+			display: none;
+		}
+	}
+
+	&__logo {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		cursor: pointer;
+		min-height: 25px;
+		max-width: 140px;
+		background: url(../../img/@price/header/syn.jpg) no-repeat center center / contain;
+		img {
+			opacity: 0;
+		}
+	}
+
+	&__phone {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 0.9;
+		margin: 0 16px;
+		a + a {
+			margin-left: 25px;
+		}
+		b {
+			font-weight: inherit;
+		}
+		a:nth-child(1),
+		a:nth-child(3) {
+			display: none;
+		}
+	}
+
+	&__button {
+		min-width: 220px;
+		min-height: 100%;
+		color: #FFF !important;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 0.03em;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		&_callback {
+		}
+		&_registration {
+			background: #F8006B;
+			box-shadow: 3px 0px 43px rgba(3, 6, 59, 0.64);
+		}
+
+		.page-short & {
+			display: none;
+		}
+	}
+
+	&__links {
+		min-width: 100%;
+		@media (min-width: 992px) {
+			min-width: 83%;
+		}
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 125.45%;
+		text-transform: uppercase;
+
+		&-item {
+			flex: auto;
+			position: relative;
+			text-align: center;
+			margin: 0 5px;
+
+			&_reg {
+				display: none;
+			}
+		}
+		&-item + &-item:before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			bottom: 4px;
+			left: 0;
+			border-left: 1px solid;
+		}
+
+		&-item_reg + &-item::before {
+			display: none;
+		}
+	} // &__links
+
+}

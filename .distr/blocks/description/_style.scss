@@ -1,0 +1,145 @@
+.description {
+  position: relative;
+  background-color: #050B37;
+  color: #FFFFFF;
+  border-top: 2px solid #2B79E5;
+}
+
+.description__main {
+  display: flex;
+  width: 100%;
+  position: relative;
+  max-width: 1485px;
+  margin: 0 auto;
+  transform: translateX(20px);
+  z-index: 1;
+  border-right: 2px solid #2B79E5;
+  border-left: 2px solid #2B79E5;
+  background-color: #050B37;
+}
+
+.description__about {
+  position: relative;
+  width: 35%;
+  padding: 110px 80px 90px;
+  border-right: 2px solid #2B79E5;
+}
+
+.description__about-title {
+  font-family: 'Mont';
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.description__about-desc {
+  position: relative;
+  margin-top: 34px;
+  font-family: 'Mont';
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+}
+
+.description__brain {
+  width: 65%;
+  padding: 105px 105px 80px;
+}
+
+.description__brain-desc {
+  margin-bottom: 20px;
+  font-family: 'Mont';
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
+
+.description__about-emblem {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 241px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 105px;
+  }
+}
+
+.description__about-year {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 241px;
+  height: calc(100% - 175px);
+  border-top: 2px solid #2B79E5;
+
+  span {
+    font-size: 62.3077px;
+    line-height: 73px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #2B79E5;
+    transform: rotate(90deg);
+    font-weight: 200;
+  }
+}
+
+.description__brain-image {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 200px;
+  height: calc(100% - 155px);
+  border-bottom: 2px solid #2B79E5;
+  background-image: url("../img/description/dark.gif");
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 95%;
+  background-size: auto 110%;
+  background-position: 10px 0;
+}
+
+.description__brain-emblem {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 155px;
+  transform: translateX(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 105px;
+  }
+}
+
+.lang-en {
+  .description {
+    &__brain {
+      &-desc {
+        margin-bottom: 50px;
+        &_part {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+}

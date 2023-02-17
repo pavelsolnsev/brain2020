@@ -1,0 +1,30 @@
+.popup-accreditation {
+	max-width: 900px;
+	&__title {
+		padding-bottom:2rem;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 38px;
+		line-height: 49px;
+		text-transform: uppercase;
+		color: #1C1E2C;
+	}
+	&__text {
+		margin-bottom:20px;
+		font-size: 30px;
+		line-height: 137.8%;
+		color: #000000;
+	}
+	a {
+		font-size: 30px;
+		line-height: 137.8%;
+		color: #2B79E5;
+		text-decoration: none;
+	}
+	&__rules-link {
+	}
+
+	.fancybox-close-small svg {
+		display: block;
+	}
+}

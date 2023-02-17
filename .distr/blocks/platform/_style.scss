@@ -1,0 +1,48 @@
+.platform {
+	padding: 67px 0 0px;
+
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__text {
+		color: #333;
+		font-size: 22px;
+		line-height: 139%;
+		margin-bottom: 0;
+		font-family: 'Mont';
+	}
+
+	&__list {
+		font-size: 22px;
+		font-family: 'Mont';
+		line-height: 32px;
+		padding-left: 10px;
+		li {
+			list-style-type: none;
+			&::before {
+				content: "—";
+				position: relative;
+				left: -10px;
+			}
+		}
+	}
+
+	&__button {
+		display: none;
+		height: 60px;
+		max-width: 360px;
+		margin-top: 30px;
+	}
+
+	&__box {
+		position: relative;
+		margin-bottom: 80px;
+	}
+
+	&__bottom {
+		@media (min-width: 1200px) {
+			min-height: 415px;
+		}
+	}
+
+}

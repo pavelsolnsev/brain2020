@@ -1,0 +1,266 @@
+.speakers {
+  overflow: hidden;
+}
+.speakers__title {
+  margin-bottom: 0;
+  padding: 53px 15px 50px;
+  border-bottom: 2px solid #2B79E5;
+}
+
+.speakers__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-left: 2px solid #2B79E5;
+  z-index: 1;
+}
+
+.speakers__list-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 33.3%;
+  min-height: 560px;
+  padding: 31px 36px;
+  border-right: 2px solid #2B79E5;
+  border-bottom: 2px solid #2B79E5;
+
+  &1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100%;
+    width: 320px;
+    box-shadow: 0 2px 0 0 #2B79E5;
+    background-image: url("../img/speakers/bg_blue.svg");
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 515px;
+    background-size: auto 515px;
+    background-position: 0 50%;
+  }
+  &7::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100%;
+    width: 320px;
+    box-shadow: 0 2px 0 0 #2B79E5;
+  }
+
+  &3::before, &4::before, &9::before, &10::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100%;
+    width: 320px;
+    box-shadow: 0 2px 0 0 #2B79E5;
+  }
+
+  &3::before, &9::before {
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  &-button {
+    font: 700 16px/1em 'Mont';
+    color: #2B79E5 !important;
+    border-bottom: 1px solid #2B79E5;
+    display: block;
+    max-width: 97px;
+  }
+
+  &_empty {
+  //  box-shadow: 4px 0 0 0 #FFFFFF;
+  position: relative;
+  
+  &:after{
+    content: '';
+    width: 1900px;
+    height: 2px;
+    background-color: #2B79E5;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+  .speakers__list-item_empty-pic_mobile{
+    display: none;
+  }
+}
+
+}
+// .speakers__list-item_empty:last-child {
+//   display: none;
+// }
+
+.speakers__list-item-add {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 320px;
+  box-shadow: 0 2px 0 0 #2B79E5;
+
+  span {
+    font-family: 'Mont';
+    font-weight: 300;
+    font-size: 50.5927px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    color: #2B79E5;
+    transform: rotate(90deg);
+  }
+}
+
+.speakers__list-item-photo {
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.speakers__list-item-text {
+  margin-top: 37px;
+  flex-grow: 1;
+}
+
+.speakers__list-item-name {
+  margin-bottom: 0;
+  font-family: 'Mont';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1C1E2C;
+}
+
+.speakers__list-item-info {
+  max-width: 280px;
+  font-family: 'Mont';
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.speakers__more {
+  position: relative;
+  width: 100%;
+  padding: 40px 15px 89px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.speakers__more-btn {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: 54px;
+  margin: 0 auto;
+  background-color: #2B79E5;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 900;
+  font-family: 'Mont';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.speakers__list-item {
+  &_odd & {
+    &-photo  {
+      &_1 {
+        display: none;
+      }
+      &_tablet {
+        display: none;
+      }
+    }
+  }
+} 
+// .speakers__list-item_odd {
+//   .speakers__list-item-photo_1 {
+//     display: none;
+//   }
+//   .speakers__list-item-photo_tablet {
+//     display: none;
+//   }
+// }
+
+.speakers__list-item_even {
+    width: 66.66666%; 
+    padding: 31px 72px;
+
+    .speakers__list-item-photo {
+
+        padding: 0 36px; 
+        text-align: center; 
+        background: #ecf2fd url(../img/speakers/speaker_empty_blue.jpg) no-repeat 50% 0; 
+        background-size: cover;
+        margin: 0 -36px;
+
+        &_2 {
+          display: none;
+        }
+    
+        &-inner {
+          max-width: 50%; 
+          margin: 0 auto;
+        }
+    }
+
+    .speakers__list-item-text {
+        margin: 37px -36px 0 -36px;
+    }
+}
+
+.lang-en {
+  .speakers {
+    &__list {
+      &-item {
+        &-button {
+          max-width: 45px;
+        }
+      }
+    }
+    &__button {
+      padding: 66px 0;
+      &_box {
+        background-color: #050B37;
+        color: #fff;
+        max-width: 408px;
+        padding: 24px 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        margin: 0 auto;
+      }
+    }
+  }
+}

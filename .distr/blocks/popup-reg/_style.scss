@@ -1,0 +1,60 @@
+.popup-reg {
+	// background: url('../img/popup-reg/bg_popup_cross_nobord_blue.png')no-repeat top 0 right 0 / contain;
+	padding: 0;
+	height: auto;
+	background-color: #FFFFFF;
+	border: 2px solid #9DB1CD;
+	overflow: hidden;
+	max-width: 600px;
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+
+	.form {
+		float: none;
+		padding: 0;
+		max-width: 500px;
+		min-height: 400px;
+
+		&__content {
+			padding: 75px 90px 0px;
+		}
+
+		&__header {
+			flex-direction: column;
+
+			&-title {
+				font-size: 28px;
+				margin-bottom: 15px;
+			}
+		}
+
+		&__input {
+			background: none;
+		}
+
+		&:after {
+			content: none;
+		}
+	}
+
+	.popup-button {
+		display: none;
+	}
+
+	.fancybox-close-small svg {
+		display: block;
+	}
+}
+.popup-presentation .form__title{
+    padding: 20px 0;
+}
+.popup-partner .form__title {
+	max-width: none;
+}
+
+
+

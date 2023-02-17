@@ -1,0 +1,156 @@
+.form {
+	background: none;
+	position: relative;
+	//overflow: hidden;
+	//width: 100%;
+  //padding: 0;
+
+  &__content {
+    padding: 50px 60px 30px;
+  }
+
+  &__header {
+  }
+
+  &__title {
+  	font: 600 22px/1.4em 'Mont';
+  	// max-width: 230px;
+  }
+
+  &__box {
+  	display: flex;
+  	justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	&__item {
+		flex: 1 0 60px;
+		// max-width: 320px;
+		width: 100%;
+	}
+
+	&__input {
+		font: 400 16px/1em 'Mont';
+		text-transform: uppercase;
+		width: 100%;
+	 	color: #333333;
+	 	background: #fff;
+
+		height: 35px;
+		border: none;
+		border-bottom: 2px solid gray;
+		margin-right: 10px;
+		padding-left: 5px;
+
+		&:focus::placeholder {opacity: 0;}
+		&::placeholder {color: gray;}
+  }
+
+  &__button {
+		border: none;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+	  	box-shadow: 0px 3px 20px 3px #57a0d5de;
+			box-shadow: 1px 2px 15px rgba(22, 3, 27, 0.25);
+	  	box-shadow: 0px 3px 20px 3px #57a0d5de;
+		}
+  }
+
+	&__chekbox {
+		display: flex;
+	  position: relative;
+	  margin: 20px 0;
+	  label {
+	    width: 20px;
+	    height: 20px;
+	    cursor: pointer;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    border-radius: 4px;
+	    &:after {
+    		content: url('../img/main/check.png');
+    		position: absolute;
+	    }
+	    &:hover::after {
+	      opacity: 0.3;
+	    }
+	  }
+
+	  span {
+	  	font: normal 12px 'Mont';
+	  	max-width: initial;
+	  	padding: 0 0 0 20px;
+	  	color: #000;
+	  }
+
+	  a {
+	  	//border-bottom: 1px solid #999999;
+	  	color: #9DB1CD;
+	  	line-height: 50%;
+	  }
+
+  	a:hover {
+  		color: #FF333F;
+  		border-color: #FF333F;
+  	}
+
+	  input[type=checkbox] {
+	    visibility: hidden;
+	    &:checked + label:after {
+	      opacity: 1;
+	    }
+	  }
+
+	  input[type=checkbox] {
+	    &:checked + label.opacity:after {
+	      opacity: 0;
+	    }
+	  }
+	}
+}
+
+.vertical {
+	padding: 0px 0px 0px;
+	max-width: 500px;
+	//height: 596px;
+  margin: 0 auto;
+
+	.form__box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.form__input {
+		margin: 0 auto 0;
+		width: 100%;
+		max-width: initial;
+	}
+
+	.form__button {
+		margin: 20px auto 0px;
+		width: 100%;
+		max-width: initial;
+	}
+}
+
+.popup-button {
+	display: none;
+}
+
+//.popup-button {
+//	display: none;
+//	font: 20px 'Proxima Nova Semibold';
+//	text-transform: uppercase;
+//	max-width: 345px;
+//	height: 55px;
+//	color: #fff;
+//	background: radial-gradient(91.01px at 53.62% -65.45%, rgba(203, 0, 255, 0.66) 0%, rgba(0, 241, 255, 0.66) 100%), #AB19D0;
+//	box-shadow: 0px 15px 15px rgba(58, 167, 239, 0.35);
+//	border-radius: 4px;
+//	text-align: center;
+//	padding: 15px 10px;
+//	margin: 0 auto;
+//}

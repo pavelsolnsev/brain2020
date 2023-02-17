@@ -1,0 +1,57 @@
+.chatbot {
+    // padding: 72px 0;
+    .container {
+        max-width: 1300px;
+    }
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-left: 2px solid #2b79e5;
+    }
+    &__whatsapp {
+        max-width: 49px;
+        margin-bottom: 22px;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        // max-width: 800px;
+        padding: 35px;
+        &-text {
+            font-family: 'Mont';
+            font-size: 34px;
+            line-height: 45px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #1c1e2c;
+            font-weight: 900;
+        }
+    }
+    &__qr {
+        max-width: 408px;
+        width: 100%;
+        // padding: 0 60px;
+        padding: 25px;
+        border-left: 2px solid #2b79e5;
+        border-right: 2px solid #2b79e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img{
+            margin: 15px auto;
+            max-width: 275px;
+        }
+        img {
+            width: 100%;
+        }
+        &-button {
+            .button {
+                background-color: #25d366;
+                margin: 10px auto;
+                padding: 0 2rem;
+            }
+        }
+    }
+}

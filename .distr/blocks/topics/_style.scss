@@ -1,0 +1,67 @@
+.topics {
+	background: #000;
+	color: #fff;
+	padding: 70px 0 70px;
+
+	&__content {
+		display: flex;
+		margin-top: -80px;
+	}
+
+	&__item {
+		max-width: 330px;
+
+		&-img {
+			max-width: 150px;
+			max-height: 150px;
+			margin-bottom: 30px;
+		}
+
+		&-title {
+			font: 600 22px/1.3em 'Mont';
+			margin-bottom: 20px;
+			margin-left: 20px;
+		}
+
+		&-txt {
+			font: 400 16px/1.3em 'Mont';
+			margin-left: 20px;
+		}
+	}
+
+	.owl_container {
+		margin-bottom: 50px;
+	}
+
+	.owl-nav  {
+		width: 150px;
+		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+
+		.disabled {
+			opacity: .5;
+		}
+
+		& button.owl-next,
+		& button.owl-prev {
+			background: url('../img/topics/arrow.png') no-repeat center center !important;
+			border: none;
+			width: 75px;
+			height: 75px;
+			transition: all .5s ease;
+			transform: rotate(180deg);
+
+			span { display: none }
+
+			&:hover, &:focus {
+				outline: none;
+			}
+		}
+
+		& button.owl-next {
+			transform: rotate(0deg);
+			margin-top: -1px;
+		}
+	}
+}

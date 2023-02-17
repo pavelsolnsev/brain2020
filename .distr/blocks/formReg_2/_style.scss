@@ -1,0 +1,66 @@
+.form_reg_2 {
+	background: #9AC4FF;
+	border-top: 2px solid #2B79E6;
+	border-bottom: 2px solid #2B79E6;
+
+	.container {
+		max-width: 1360px;
+	}
+
+	.form {
+		position: relative;
+
+	  &__content {
+	  	padding: 70px 0px 45px;
+			opacity: 1 !important;
+	  }
+
+	  &__title {
+	  	font: 600 22px/1.4em 'Mont';
+	  	letter-spacing: 1px;
+	  	max-width: initial;
+	  	margin-bottom: 40px;
+	  }
+
+	  &__box {
+	  	display: flex;
+	  	justify-content: space-between;
+			margin-top: 0;
+	  }
+
+		&__item {
+			flex: none;
+			max-width: 320px;
+			width: 23%;
+			align-self: flex-start;
+			//width: 100%;
+		}
+
+	  &__input {
+	  	background: none;
+	  	height: 55px;
+			border-bottom: 2px solid rgba(28, 30, 44, 0.5);
+			color: #1C1E2C !important;
+			opacity: 1;
+
+			&::placeholder {color: #1C1E2C;}
+	  }
+
+	  &__chekbox {
+	  	margin: 30px 0;
+	  	label {
+	  		width: 14px;
+	  		height: 14px;
+	  		background: #fff;
+	  		&:after {
+	  			top: -5px;
+	  		}
+	  	}
+
+	  	a {
+		  	color: #fff;
+		  	line-height: 50%;
+		  }
+		}
+	}
+}

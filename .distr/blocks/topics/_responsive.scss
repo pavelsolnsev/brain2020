@@ -1,0 +1,63 @@
+.topics {
+
+	@media ( max-width: 1024px ) {
+
+		&__item {
+			max-width: 320px;
+		}
+	}
+
+	@media ( max-width: 768px ) {
+
+		&__item {
+			max-width: initial;
+		}
+	}
+
+	@media ( max-width: 576px ) {
+
+		&__title {
+			max-width: 250px;
+			line-height: 7vw;
+		}
+
+		&__content {
+			margin-top: -100px;
+		}
+		&__item {
+
+			&-img {
+				margin-top: 50px;
+			}
+		}
+	}
+
+	@media ( max-width: 375px ) {
+
+		&__title {
+			max-width: 100px;
+		}
+
+		&__content {
+			margin-top: -80px;
+		}
+
+
+		.owl-nav {
+			width: 100px;
+
+			& button.owl-next,
+			& button.owl-prev {
+				background-size: contain !important;
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+
+
+
+
+

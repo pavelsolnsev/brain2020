@@ -1,0 +1,102 @@
+<?php
+
+{% set data1 = [
+     { image: 'rambler.png', href: 'https://news.rambler.ru/', ru: true}
+    ,{ image: 'top_franchise.png', href: 'https://topfranchise.ru', ru: true}
+    ,{ image: 'logopsy.jpg', href: 'https://www.psychologies.ru/', ru: true}
+    ,{ image: 'nauka.png', href: 'https://naukatv.ru/', ru: true}
+    ,{ image: 'fed_press.png', href: 'https://fedpress.ru/', ru: true}
+    ,{ image: 'pop_mech.png', href: 'https://www.popmech.ru/', ru: true}
+    ,{ image: 'zhur_strat.png', href: 'https://strategyjournal.ru/', ru: true}
+	,{ image: 'psy_search.png', href: 'https://psychosearch.ru/', ru: true}
+	,{ image: 'yoga.png', href: 'https://yogajournal.ru/', en: true, ru: true}
+	,{ image: 'eva.png', href: 'https://eva.ru/', en: true , ru: true}
+	,{ image: 'cetre.png', href: 'https://cetre.ru/', en: true , ru: true}
+	,{ image: 'master_jou.png', href: 'https://masterjournal.ru/', en: true , ru: true}
+	,{ image: 'boss.png', href: 'http://www.bossmag.ru', en: true, ru: true}
+	,{ image: 'skazka.png', href: 'https://parkskazka.com/', en: true , ru: true}
+	,{ image: 'waterpik.png', href: 'https://waterpikrussia.ru/', en: true, ru: true}
+	,{ image: 'be.jpg', href: 'https://ria-stk.ru/ ', en: true, ru: true}
+	,{ image: 'pro_business.jpg', href: 'https://www.probusinesstv.ru/', en: true, ru: true}
+	,{ image: 'top_crop.jpg', href: 'https://www.topcrop.ru/', en: true, ru: true}
+	,{ image: 'expert.jpg', href: 'https://expert.ru/ ', en: true, ru: true}
+	,{ image: 'jobsora.png', href: 'https://ru.jobsora.com/', en: true, ru: true}
+]
+%}
+
+{% set data2 = [
+
+    { image: 'egm.png', href: 'https://emg.fm/', ru: true}
+	,{ image: 'royal.png', href: ' http://www.rwclub.ru/', ru: true}
+	,{ image: 'baikal-logo.png', href: 'https://tkbaikalaqua.com/', ru: true}
+	,{ image: 'mentos_full.png', href: 'https://www.mentos.ru', ru: true}
+    ,{ image: 'xfit_full.png', href: 'https://www.xfit.ru/', ru: true}
+    ,{ image: 'vintorg_full.png', href: 'https://vintorg.ru', ru: true}
+    ,{ image: 'erburian_full.png', href: 'https://www.erborian.ru', ru: true}
+    ,{ image: 'frame.png', href: 'https://frame.moscow/', ru: true}
+    ,{ image: 'halten.png', href: 'https://halten.ru', ru: true}
+    ,{ image: 'biocera.png', href: 'https://bio-cera.ru/', ru: true}
+	,{ image: 'megogo.png', href: 'https://megogo.ru/ru', en: true}
+	,{ image: 'gallery.png', href: 'www.gallerymedia.com', en: true, ru: true}
+	,{ image: 'seranking.png', href: 'https://seranking.ru/', en: true , ru: true}
+	,{ image: 'sendsay.png', href: 'https://sendsay.ru', en: true , ru: true}
+	,{ image: 'worldclass.png', href: 'https://www.worldclass.ru/', en: true, ru: true}
+	,{ image: 'deonica.png', href: 'https://pro-deonica.ru/series/antibacterial', en: true}
+	,{ image: 'sarto-reale.png', href: 'https://sartoreale.ru/', en: true , ru: true}
+	,{ image: 'ortho-sleep.png', href: 'https://orthosleep.ru/', en: true , ru: true}
+	,{ image: 'ingate.jpg', href: 'https://www.ingate.ru/', en: true , ru: true}
+	,{ image: 'prnews.jpg', href: 'https://www.prnews.ru/', en: true , ru: true}
+	,{ image: 'dr-shipkov.png', href: 'http://shipkovclinic.ru/', en: true , ru: true}
+	,{ image: 'esalen.png', href: '', en: true}
+	,{ image: 'sendpulse.png', href: 'https://sendpulse.com/ru', en: true}
+	,{ image: 'ActualMarketing.png', href: 'https://actualmarketing.ru/', en: true}
+	,{ image: 'calltouch.png', href: 'https://www.calltouch.ru/', en: true, ru: true}
+	,{ image: 'delalma.jpeg', href: 'http://delalma.tilda.ws/', en: true}
+	,{ image: 'unisender.png', href: 'https://www.unisender.com', en: true, ru: true}
+	,{ image: 'agima.png', href: 'https://www.agima.ru/', en: true, ru: true}
+	,{ image: 'trendfox.jpeg', href: 'https://trendfox.ru/?utm_source=synergy&utm_term=synergy', en: true, ru: true}
+	,{ image: 'skyeng.png', href: 'http://skyeng.ru/go/synergyglobal', en: true, ru: true}
+	,{ image: 'kidsdev.jpg', href: 'http://kidsd.ru/', en: true}
+	,{ image: 'prparthner.png', href: 'https://www.prpartner.ru/', en: true, ru: true}
+	,{ image: 'mcn-telecom.png', href: 'https://www.mcn.ru/', en: true}
+	,{ image: 'redmond.png', href: 'https://multivarka.pro/?utm_source=bloger&utm_medium=sinergia_logo&utm_campaign=sinergia_logo_multivarka', en: true}
+	,{ image: 'ichien.png', href: 'https://www.ichien.ru/', en: true}
+	,{ image: 'th.png', href: '', en: true}
+	,{ image: 'logo-gor.png', href: 'http://4hub.com.ua/', en: true, ru: true}
+	,{ image: 'jooble.jpg', href: 'https://ru.jooble.org', en: true, ru: true}
+	,{ image: 'garti.png', href: 'https://garti.me/', en: true, ru: true}
+	,{ image: 'coba.png', href: 'https://cobascent.com/', en: true, ru: true}
+	,{ image: 'fill.png', href: 'https://3sense.ru/', en: true, ru: true}
+	,{ image: 'mun.png', href: 'http://instamun.ru/?utm_source=BRAIN+2020&utm_medium=expo&utm_campaign=promo', en: true, ru: true}
+	,{ image: 'gala.png', href: 'https://www.galladance.com/', en: true, ru: true}
+	,{ image: 'chaika.jpg', href: 'http://restoran-chaika.ru/', en: true, ru: true}
+	,{ image: 'lastochka.jpg', href: 'http://restoran-lastochka.ru/', en: true, ru: true}
+	,{ image: 'eframov.png', href: 'https://efremov.gold/', en: true, ru: true}
+	,{ image: 'kaplan.png', href: 'https://kaplan-smilespa.ru/', en: true, ru: true}
+	,{ image: 'clinical.png', href: 'https://www.isclinical.ru/', en: true, ru: true}
+	,{ image: 'kingwtr.jpg', href: 'https://kingswater.ru/', ru: true}
+	,{ image: 'elemis.jpg', href: 'https://elemis.ru/', en: true, ru: true}
+	,{ image: 'capital.png', href: 'https://capitalsc.ru/', en: true, ru: true}
+	,{ image: 'grand.png', href: 'https://www.grand-clinic.ru/', en: true, ru: true}
+	,{ image: 'hydra.png', href: 'https://hydrafacial.ru/', en: true, ru: true}
+	,{ image: 'saco.png', href: 'https://sacohair.ru/', en: true, ru: true}
+	,{ image: 'bird.png', href: 'http://pavogallerygroup.com/', en: true, ru: true}
+	,{ image: 'first.png', href: 'https://www.firstandonly.ru/', en: true, ru: true}
+	,{ image: 'k.png', href: 'https://www.korkunov.ru/', en: true, ru: true}
+	,{ image: 'ges.png', href: 'https://gessmarket.ru/?utm_source=synergy&utm_medium=video&utm_campaign=synergy', en: true, ru: true}
+]
+%}
+
+
+{% set data3 = [
+     { image: 'cdek.png', href: 'https://www.cdek.ru/ru/', ru: true}
+]
+%}
+
+
+
+{# Резерв #}
+
+{#
+
+#}

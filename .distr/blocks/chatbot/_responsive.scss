@@ -1,0 +1,75 @@
+@media (max-width: 1280px) {
+    .chatbot {
+        &__wrapper {
+            border: none;
+        }
+        &__qr {
+            border-right: none;
+        }
+        &__text-text{
+            font-size: 30;
+            line-height: 34px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .chatbot {
+        // padding: 24px 0;
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__text {
+            max-width: 715px;
+            &-text {
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+        &__qr {
+            max-width: 220px;
+            padding-right: 0;
+            padding-left: 15px;
+        }
+        .button {
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .chatbot {
+        &__wrapper {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+        &__whatsapp {
+            margin: 0 auto 20px;
+        }
+        &__text {
+            // max-width: 300px;
+            margin: 0;
+            &-text {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+        &__qr {
+            width: 100%;
+            max-width: 100%;
+            border-left: none;
+            &-img {
+                display: none;
+            }
+            &-button {
+                max-width: 100%;
+            }
+        }
+        .button {
+            margin: 20px auto 0;
+            padding: 0 20px;
+        }
+    }
+}

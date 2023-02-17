@@ -1,0 +1,131 @@
+.expectations{
+	padding: 50px 0 0;
+	font-family: 'Mont';
+	&__title{
+		text-align: center;
+	}
+	&__block{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		position: relative;
+		max-width: 1270px;
+		margin: 43px auto 0;
+		&-item{
+			width: 25%;
+			padding: 45px 45px 40px 35px;
+			width: 25%;
+			border: 2px solid #2B79E5;
+			border-right: 0;
+			margin-top: -2px;
+			&_pic{
+				max-width: 158px;
+				margin: 0 auto;
+			}
+			&_text{
+				font-weight: 600;
+				font-size: 19px;
+				line-height: 25px;
+				letter-spacing: 0.02em;
+				color: #1C1E2C;
+			}
+			&:first-child{
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 150%;
+					top: -2px;
+					left: -150%;
+					background-color: #2B79E5;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					background-image: url("../img/expectations/line_blue.svg");
+					background-repeat: no-repeat;
+					background-position: top;
+					background-size: cover;
+					width: 333px;
+					height: 100%;
+					top: -7px;
+					left: -106%;
+				}
+			}
+			&:nth-child(4){
+				border-right: 2px solid #2B79E5;
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 150%;
+					bottom: -2px;
+					right: -150%;
+					background-color: #2B79E5;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 150%;
+					top: -2px;
+					right: -150%;
+					background-color: #2B79E5;
+				}
+			}
+			&:nth-child(5){
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 150%;
+					bottom: -2px;
+					left: -150%;
+					background-color: #2B79E5;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 150%;
+					top: -2px;
+					left: -150%;
+					background-color: #2B79E5;
+				}
+			}
+			&:last-child{
+				display: flex;
+				align-items: center;
+				border-right: 2px solid #2B79E5;
+				padding: 10px;
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					height: 2px;
+					width: 150%;
+					bottom: -2px;
+					right: -150%;
+					background-color: #2B79E5;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					background-image: url("../img/expectations/line_blue.svg");
+					background-repeat: no-repeat;
+					background-position: bottom;
+					background-size: cover;
+					width: 333px;
+					height: 100%;
+					bottom: -19px;
+					right: -107%;
+				}
+			}
+		}
+
+	}
+}
