@@ -1,0 +1,55 @@
+.diving {
+	font-family: 'Mont';
+	background: #1C1E2C;
+	background-image: url('../img/diving/bg_blue.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	&:before{
+		content: '';
+		background-image: url('../img/diving/decoration_blue.png');
+		width: 839px;
+		height: 724px;
+		position: absolute;
+		right: 4px;
+	}
+	.container {
+		max-width: 1300px;
+	}
+	&__title {
+		margin-bottom: 20px;
+    letter-spacing: normal;
+		color: #fff;
+    text-align: left;
+	}
+	&__block {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-right: 2px solid #2B79E5;
+		border-left: 2px solid #2B79E5;
+		&-item {
+			width: 50%;
+			&:last-child{
+				border-left: 2px solid #2B79E5;
+			}
+			&_main{
+				padding: 180px 70px;
+			}
+			&_pic{
+				background-image: url('../img/diving/pic.jpg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+		}
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 190%;
+		letter-spacing: 0.02em;
+		color: #fff;
+	}
+}

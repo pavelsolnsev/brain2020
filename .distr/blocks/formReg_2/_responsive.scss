@@ -1,0 +1,26 @@
+.form_reg_2 {
+
+
+	@media ( max-width: 992px ) {
+
+		.form {
+
+			&__button {
+				max-width: 230px;
+			}
+		}
+	}
+
+	@media ( max-width: 800px ) {
+		display: none;
+
+		.form {
+			display: none;
+		}
+	}
+
+	@media ( max-width: 768px ) {
+
+	}
+}
+

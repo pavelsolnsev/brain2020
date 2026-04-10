@@ -1,0 +1,100 @@
+.vtb {
+    padding: 100px 0 127px 0;
+
+    &__box {
+        position: relative;
+        display: flex;
+        max-width: 1144px;
+        background: #fff;
+        box-shadow: 0px 4.02994px 30.2245px rgba(77, 44, 224, 0.3);
+        margin: 0 auto;
+    }
+
+    &__left {
+        width: 55%;
+        padding: 64px 40px 55px 61px;
+    }
+
+    &__right {
+        display: flex;
+        width: 45%;
+        padding: 0 29px 40px 29px;
+        align-items: flex-end;
+        background: #00132e url(../img/vtb/adizes.jpg) no-repeat 50% 0;
+        background-size: cover;
+    }
+
+    &__logo {
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 38.5459px;
+        line-height: 115%;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 22.27px;
+        line-height: 163%;
+        color: #0A2973;
+    }
+
+    &__list {
+        display: inline-block;
+        min-width: 370px;
+        list-style: none;
+        padding: 0 0 10px 0;
+
+        &-item {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 67, 187, 0.14);
+            font-size: 18px;
+            line-height: 129%;
+
+            &:last-child {
+                border: 0;
+            }
+
+            &-part {
+                font-weight: 700;
+                color: #5fdef8;
+            }
+        }
+    }
+
+    &__button {
+        max-width: 286px;
+        height: 60px;
+        font-size: 23.3068px;
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+        }
+    }
+
+    &__gift {
+        position: relative;
+        padding-left: 70px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 98%;
+        color: #fff;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 56px;
+            height: 57px;
+            background: url(../img/vtb/gift.png) no-repeat 50% 0;
+        }
+    }
+}

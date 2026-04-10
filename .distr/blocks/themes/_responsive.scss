@@ -1,0 +1,112 @@
+@media (max-width: 1300px) {
+  .themes__list {
+    max-width: 100%;
+    border-left: none;
+  }
+  .themes__list-item {
+    border-right: none;
+
+    &::before {
+      display: none;
+    }
+
+    &:nth-of-type(2), &:nth-of-type(3n + 2) {
+      border-right: 2px solid #9DB1CD;
+      border-left: 2px solid #9DB1CD;
+    }
+  }
+  .themes__list-item_download {
+    box-shadow: 2px 0 0 0 #FFFFFF;
+  }
+}
+
+@media (max-width: 1200px) {
+  .themes__list-item_download {
+    background-color: #fff;
+  .themes__list-item-emblem {
+    display: block;
+  }
+}
+}
+
+@media (max-width: 992px) {
+
+  .themes__list-item {
+    min-height: auto;
+    padding: 35px 40px;
+  }
+  .themes__list-item-emblem {
+    height: 95px;
+    transform: translateX(-10px);
+  }
+  .themes__list-item-desc {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .themes__list-item_download {
+    .themes__list-item-emblem {
+      height: 75px;
+    }
+  }
+  .themes__list-item-link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .themes__list-item-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .themes__list-item {
+    padding: 33px 20px 20px;
+  }
+  .themes__list-item-emblem {
+    transform: translateX(-5px);
+  }
+}
+
+@media (max-width: 575px) {
+  .themes__title {
+    padding: 43px 15px 38px;
+  }
+  .themes__list-item {
+    width: 50%;
+
+    &:nth-of-type(2), &:nth-of-type(3n + 2) {
+      border-right: none;
+      border-left: none;
+    }
+    &:nth-of-type(2n) {
+      border-left: 2px solid #9DB1CD;
+    }
+  }
+  .themes__list-item-emblem {
+    height: 90px;
+  }
+  .themes__list-item-desc {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .themes__list-item9{
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .themes__list-item_download {
+    display: none;
+    width: 100%;
+    box-shadow: none;
+    padding: 40px 20px 30px;
+    text-align: center;
+  }
+  .themes__list-item-link {
+    display: block;
+    max-width: 165px;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,175 @@
+.place{
+	border-bottom: 2px solid #2B79E5;
+	font-family: 'Mont';
+	.container{
+		max-width: 1565px;
+		border-left: 2px solid #2B79E5;
+		border-right: 2px solid #2B79E5;
+		padding: 70px 0 0;
+	}
+	&-pic{
+		position: relative;
+		&:before{
+			content: '';
+			width: 200%;
+			height: 2px;
+			background-color: #2B79E5;
+			position: absolute;
+			top: 0;
+			left: -50%;
+		}
+		&:after{
+			content: '';
+			width: 200%;
+			height: 2px;
+			background-color: #2B79E5;
+			position: absolute;
+			bottom: 0;
+			left: -50%;
+		}
+		img{
+			width: 100%;
+		}
+	
+	}
+	&__cont{
+		padding: 25px 143px;
+		border-top: 2px solid #2B79E5;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		&-text{
+			font-size: 42px;
+			line-height: 55px;
+			letter-spacing: 0.02em;
+			color: #2B79E6;
+			margin-bottom: 0;
+		}
+		&-link{
+			background: #050B37;
+			font-size: 14px;
+			line-height: 16px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			flex: none;
+			order: 0;
+			align-self: center;
+			justify-content: center;
+			width: 100%;
+			max-width: 320px;
+			height: 50px;
+			&:hover,
+			&:active,
+			&:focus{
+				color: #FFFFFF;
+				opacity: 0.8;
+				transition: 0.2s;
+			}
+		}
+	}
+	&__content{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&-info{
+			width: 65%;
+
+			&_d{
+				padding: 85px 143px 80px;
+			}
+		}
+		&-numbers{
+			width: 35%;
+			border-left: 2px solid #2B79E5;
+			background: url("../img/place/decoration_top_blue.svg") no-repeat center -325px, 
+									url("../img/place/decoration_bottom_blue.svg") no-repeat bottom;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			&-pic {
+				text-align: center;
+
+				IMG {
+					max-width: 239px;
+				}
+			}
+		}
+	}
+	&__title{
+		font-family: 'Mont-HeavyDEMO';
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: #1C1E2C;
+	}
+	&__name{
+		font-weight: 600;
+		font-size: 42px;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+		color: #2B79E5;
+		margin-top: 80px;
+	}
+	&__description{
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 150%;
+		letter-spacing: 0.02em;
+		color: #1C1E2C;
+		margin-top: 30px;
+	}
+	&__link{
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+		color: #1C1E2C;
+		background-color: #fff;
+		position: relative;
+		display: flex;
+		align-items: center;
+		max-width: 345px;
+		margin-top: 65px;
+		&-map{
+			max-width: 32px;
+			margin-right: 10px;
+		}
+		&-arrow{
+			max-width: 30px;
+			margin-left: 10px;
+			margin-top: 4px;
+		}
+		&:before{
+			content: '';
+			width: 112px;
+			height: 112px;
+			background-image: url("../img/place/map-pic-round_blue.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			left: -39px;
+			z-index: -1;
+		}
+	}
+	&__text{
+		font-size: 20px;
+		line-height: 21px;
+		letter-spacing: 0.02em;
+		color: #000000;
+		padding-left: 140px;
+		span{
+			font-weight: 300;
+			font-size: 60px;
+			line-height: 70px;
+			color: #000000;
+		}
+	}
+}

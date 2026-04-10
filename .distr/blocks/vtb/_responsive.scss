@@ -1,0 +1,118 @@
+.vtb {
+
+    @media (max-width: 1199px) {
+
+        &__left {
+            padding: 64px 40px 55px 40px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        &__left {
+            width: 60%;
+            padding: 34px 30px;
+        }
+
+        &__right {
+            width: 40%;
+            padding: 0 20px 22px 20px;
+        }
+
+        &__logo {
+            max-width: 97px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 118%;
+            margin-bottom: 9px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 157%;
+        }
+
+        &__list {
+            min-width: 193px;
+            padding: 0;
+    
+            &-item {
+                padding: 7px 0;
+                font-size: 10px;
+                line-height: 121%;
+            }
+        }
+
+        &__gift {
+            padding-left: 40px;
+            font-size: 12px;
+            line-height: 117%;
+    
+            &:before {
+                width: 30px;
+                background-size: 100% auto;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        &__button {
+            max-width: 150px;
+            height: 31px;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 599px) {
+        
+        &__left {
+            width: 100%;
+            padding: 55px 25px 49px 25px;
+        }
+    
+        &__right {
+            display: none;
+        }
+
+        &__logo {
+            max-width: none;
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 127%;
+            margin-bottom: 9px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 133%;
+        }
+
+        &__list {
+            display: block;
+            padding: 0;
+    
+            &-item {
+                padding: 10px 0;
+                font-size: 14px;
+                line-height: 164%;
+            }
+        }
+
+        &__button {
+            max-width: 286px;
+            height: 60px;
+            font-size: 23.3068px;
+        }
+	} 
+}

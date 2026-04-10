@@ -1,0 +1,29 @@
+.form_reg_3 {
+
+
+	@media ( max-width: 992px ) {
+
+		.form {
+
+			&__button {
+				max-width: 230px;
+			}
+		}
+	}
+
+	@media ( max-width: 800px ) {
+		.form__item {
+			max-width: inherit;
+			width: 100%;
+		}
+
+	}
+
+	@media ( max-width: 575px ) {
+		.form__title{
+			font-size: 20px;
+			line-height: 130%;
+		}
+	}
+}
+

@@ -1,0 +1,65 @@
+.platform {
+	@media (max-width: 991px) {
+		padding-top: 50px;
+
+		&__title {
+			font-size: 78px;
+			line-height: .9;
+		}
+	} // 991
+
+	@media (max-width: 767px) {
+		padding: 40px 0 0px;
+
+		&__title {
+			font-size: 45px;
+			line-height: 1;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+
+		&__list {
+			padding-left: 6px;
+			margin-bottom: 20px;
+		}
+
+		&__box {
+			margin-bottom: 30px;
+		}
+
+		&__button {
+			margin: 0 0 20px;
+		}
+	} // 767
+
+	@media (max-width: 575px) {
+		order: 10;
+
+		&__text {
+			margin-bottom: 10px;
+		}
+
+		&__list {
+			padding-left: 0;
+
+			li {
+				position: relative;
+				padding-left: 30px;
+	
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 7px;
+					width: 20px; 
+					height: 17px;
+					background: url(../img/platform/checkmark.png) no-repeat 0 0;
+				}
+			}
+		}
+	}// 575
+}

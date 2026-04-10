@@ -1,0 +1,303 @@
+.price {
+
+	@media ( max-width: 1299px ) {
+
+		&__online {
+
+			&-middle {
+
+				&:after {
+					font-size: 36px;
+					line-height: 54px;
+				}
+			}
+		}
+
+		&__item {
+
+			&-cost {
+				font-size: 28px;
+
+				&:after {
+					font-size: 36px;
+					line-height: 54px;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+
+	@media ( max-width: 1200px ) {
+		&__fulltime{
+			&-button{
+				width: 220px;
+			}
+		}
+	}
+	@media ( max-width: 1080px ) {
+		&-header {
+			&__title {
+				font-size: 40px;
+			}
+		}
+		&__info{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 5vw;
+		}
+		&__title{
+			margin-bottom: 0;
+		}
+		&__scheme{
+			margin-bottom: 35px;
+		}
+		&__fulltime-title {
+			font-weight: 800;
+			font-size: 35px;
+		}
+		&__fulltime-button {
+			width: 175px;
+		}
+		&__item-list {
+			padding: 15px 15px 0;
+		}
+	}
+
+	@media ( max-width: 992px ) {
+
+		&__online {
+
+			&-middle {
+
+				&:after {
+					font-size: 28px;
+					line-height: 34px;
+				}
+			}
+		}
+
+		&__item {
+
+			&-cost {
+				font-size: 20px;
+
+				&:after {
+					font-size: 28px;
+					line-height: 34px;
+					margin-left: 10px;
+				}
+			}
+		}
+		
+		&__tnx{
+			padding: 75px 0;
+			&-title{
+				font-size: 34px;
+				line-height: 43px;
+			}
+			&-description{
+				font-size: 22px;
+				line-height: 135%;
+			}
+			.price__title {
+				padding-top: 75px;
+			}
+		}
+	}
+
+	@media ( max-width: 910px ) {
+		padding-bottom: 50px;
+
+		&__online {
+
+			&-middle {
+				flex-shrink: 1;
+				padding-left: 3%;
+			}
+
+			&-cost {
+				flex-shrink: 1;
+			}
+		}
+
+		&__item {
+			width: 49%;
+
+			&_wide {
+				width: 49%;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			&-title {
+	
+				&_wide {
+					width: 100%;
+					border-bottom: 0;
+				}
+
+				&-img {
+
+					&_wide {
+						width: 35%;
+						order: 1;
+						border-right: 0;
+						border-bottom: 2px solid #2B79E5;
+					}
+				}
+			}
+
+			&-head {
+				width: 65%;
+				padding: 0;
+				border-right: 2px solid #2B79E5;
+				border-bottom: 2px solid #2B79E5;
+				text-align: center;
+			}
+
+			&-cost {
+				font-size: 16px;
+
+				&:after {
+					font-size: 20px;
+					line-height: 24px;
+					margin-left: 10px;
+				}
+			}
+
+			&-list {
+	
+				&_wide {
+					display: none;
+				}
+
+				&_hidden {
+					display: block;
+				}
+			}
+
+			&-price {
+				justify-content: flex-start;
+				align-items: flex-start ;
+				width: 100%;
+				padding-bottom: 60px;
+			}
+		}
+
+		&__scheme {
+			font-size: 18px;
+		}
+		&__fulltime{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 30px 20px 30px 20px;
+			&-title {
+				font-size: 27px;
+				line-height: 90%;
+				margin-bottom: 20px;
+			}
+			&-button {
+				width: 250px;
+			}
+		}
+	}
+
+
+	@media ( max-width: 640px ) {
+		&-header {
+			padding: 40px 0 30px;
+			&__title {
+				font-size: 30px;
+			}
+		}
+		&__corp{
+			&-img{
+				display: none;
+			}
+			&-mb{
+				display: block;
+				width: 100%;
+			}
+		}
+		&__item {
+			width: 100%;
+		}
+		
+		&__online {
+			flex-direction: column;
+			height: initial;
+			text-align: center;
+			margin-bottom: 30px;
+
+			&-img {
+				width: 100%;
+				border-right: none;
+				border-bottom: 2px solid #2B79E5; 
+			}
+
+			&-middle {
+				width: 100%;
+				border-bottom: 2px solid #2B79E5;
+				padding: 15px 0;
+
+				&:after {
+					position: static;
+					display: block;
+					padding-top: 50px;
+					font-size: 20px;
+					line-height: 24px;
+				}
+			}
+
+			&-cost {
+				width: 100%;
+				border-left: none;
+			}
+		}
+
+		&__tnx{
+			padding: 90px 0;
+			&-title{
+				font-size: 20px;
+				line-height: 23px;
+			}
+			&-description{
+				font-size: 18px;
+				line-height: 135%;
+			}
+		}
+		.price__title {
+			padding-top: 40px;
+		}
+		&__item-title-txt{
+			padding-left: 15px;
+		}
+	}
+
+
+	@media ( max-width: 375px ) {
+
+		&-header {
+			padding: 20px 0 15px;
+			&__title {
+				font-size: 20px;
+			}
+		}
+
+		&__item {
+
+			&-price {padding: 0 40px 20px;}
+
+		}
+	}
+
+	@media ( max-width: 320px ) {
+	}
+}
+
+
+
+
+
+

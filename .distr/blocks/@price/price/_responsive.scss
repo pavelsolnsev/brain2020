@@ -1,0 +1,398 @@
+$red: #F8006B;
+$blue: #000051;
+$lblue: #2D1CED;
+
+$font-regular: 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
+$font-xcondensed: 'Proxima Nova ExCn', 'Helvetica Neue', Helvetica, sans-serif;
+$font-condensed: 'Proxima Nova Cn', 'Helvetica Neue', Helvetica, sans-serif;
+
+.price {
+
+	&-promo {
+		&__text {
+			padding: 27px 0 20px;
+		}
+		&__subtitle {
+			font-size: 29.5818px;
+			&-part {
+				background: linear-gradient(0deg, rgba(0,0,0,0) 3px, #F8006B 3px, #F8006B 6px, rgba(0,0,0,0) 6px);
+			}
+		}
+		&__title {
+			font-size: 36.9773px;
+		}
+	} // &-promo
+
+	@media (max-width: 1199px) {
+
+		&-lang {
+
+			&__bar {
+				flex-direction: column;
+				width: 100%;
+			}
+
+			&__subtitle {
+				width: 100%;
+				margin-bottom: 25px;
+
+				&-inner {max-width: 100%;}
+			}
+		}
+
+		&-university {
+
+			&__bar {
+				flex-direction: column;
+				width: 100%;
+			}
+
+			&__logo {
+				width: 100%;
+				margin-bottom: 40px;
+			}
+		}// &-university
+	}
+
+
+	@media (max-width: 991px) {
+
+		&-header {
+			padding: 90px 0 30px;
+			&__title {
+				font-size: 48px;
+				margin-bottom: 10px;
+			}
+			&__note {
+				font-size: 24px;
+			}
+		}
+
+		&-payment {
+			padding: 40px 0 50px;
+			&__title {
+				font-size: 48px;
+				margin-bottom: 20px;
+			}
+			&__note {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+			&__gift {
+				font-size: 20px;
+				margin-bottom: 30px;
+				&-image {
+					margin-bottom: 18px;
+				}
+			}
+			&__button {
+
+				box-shadow: none;
+				margin-bottom: 30px;
+			}
+		} // &-payment
+
+		&-base {
+			font-size: 21px;
+			padding: 40px 50px;
+			margin-bottom: 20px;
+			&__right {
+				padding-left: 0;
+			}
+			&__title {
+				font-size: 56px;
+				margin-bottom: 20px;
+			}
+			&__logo {
+				margin: 0 0 10px;
+			}
+			&__subtitle {
+				font-size: 32px;
+				margin: 20px 0 10px;
+			}
+		} // &-base
+
+		&-sbs {
+			font-size: 21px;
+			padding: 40px 50px;
+			margin-bottom: 23px;
+			&__title {
+				font-size: 56px;
+				margin-bottom: 14px;
+			}
+			&__text {
+				&_1 {
+					margin-bottom: 11px;
+				}
+				&_2 {
+					margin-bottom: 32px;
+				}
+			}
+		} // &-sbs
+
+		&-crm {
+			font-size: 21px;
+			padding: 40px 50px;
+			margin-bottom: 20px;
+			&__logo {
+				margin-bottom: 40px;
+			}
+			&__text {
+				max-width: 440px;
+			}
+		} // &-crm
+
+		&-lang {
+			padding: 40px 50px 50px 50px;
+
+			&__title {
+				font-size: 70px;
+				margin-bottom: 30px;
+			}
+		} // &-lang
+
+		&-university {
+			padding: 60px 50px 50px 50px;
+
+		}// &-university
+
+		&-faq {
+			padding-top: 30px;
+		}// &-faq
+
+	} // 991
+
+
+	@media (max-width: 767px) {
+
+		&-header {
+			padding: 66+22px 0 24px;
+			&__title {
+				font-size: 31px;
+				margin-bottom: 5px;
+			}
+			&__note {
+				font-size: 18px;
+			}
+		}
+
+		&-payment {
+			text-align: left;
+			padding: 30px 0 10px;
+			&__title {
+				font-size: 27px;
+				margin-left: 10px;
+				margin-right: 10px;
+				.price-payment_2 & {
+					font-size: 38px;
+					margin-bottom: 7px;
+					&-part {
+						display: none;
+					}
+				}
+			}
+			&__note {
+				font-size: 21px;
+				margin-bottom: 18px;
+			}
+			&__gift {
+				font-size: 18px;
+				margin-bottom: 0px;
+				&-image {
+					margin-bottom: 12px;
+				}
+				&-text {
+					margin-bottom: 30px;
+				}
+			}
+			&__button {
+				display: flex;
+				margin: 0 auto 18px;
+			}
+			&__options {
+				flex-wrap: wrap;
+				&-image {
+					flex: 0 0 23%;
+					margin: 0px 0px;
+				}
+			}
+		} // &-payment
+
+		&-promo {
+			display: none;
+			overflow: hidden;
+			flex-direction: column;
+			background-image: url('../../img/@price/price/promo/mobile/bg.jpg');
+			padding: 0 26px;
+			&__title {
+				font-size: 38px;
+			}
+			&__image {
+				margin: 0 -26px 0 -45px;
+			}
+		} // &-promo
+
+		&-base {
+			box-shadow: none;
+			background-image: url('../../img/@price/price/base/mobile/bg.jpg');
+			padding: 50px 18px 40px 20px;
+			&__title {
+				font-size: 48px;
+				margin-bottom: 30px;
+			}
+			&__logo {
+				margin: 0 0 10px;
+			}
+		} // &-base
+
+		&-sbs {
+			padding: 34px 20px;
+			&__title {
+				font-size: 50px;
+				margin-bottom: 12px;
+			}
+			&__text {
+				&_2 {
+					margin-bottom: 25px;
+				}
+			}
+		} // &-sbs
+
+		&-crm {
+			padding: 46px 23px 10px;
+			&__title {
+				font-size: 50px;
+				margin-bottom: 12px;
+			}
+			&__text {
+				margin-bottom: 25px;
+			}
+		} // &-crm
+
+		&-lang {
+			padding: 40px 23px 20px 23px;
+
+			&__title {
+				font-size: 49px;
+				margin-bottom: 20px;
+			}
+
+			&__description {
+				font-size: 18px;
+				line-height: 28px;
+			}
+	
+			&__subtitle {
+				font-size: 30px;
+				margin-bottom: 50px;
+			}
+
+			&__list {
+				flex-direction: column;
+				align-items: flex-start;
+				width: 100%;
+			}
+
+			&__item {
+				position: relative;
+				min-height: 100px;
+				padding-left: 80px;
+				text-align: left;
+				font-size: 26px;
+
+				&:before {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -64px;
+					width: 64px;
+					height: 64px;
+					background-size: cover;
+				}
+			}
+		} // &-lang
+
+		&-university {
+			padding: 50px 23px 80px 23px;
+			background-image: url(../../img/@price/price/university/mobile/bg.jpg);
+
+			&__title {
+				font-size: 49px;
+				margin-bottom: 20px;
+			}
+
+			&__description {
+				font-size: 18px;
+				margin: 30px 0;
+			}
+
+			&__logo {
+				max-width: 270px;
+			}
+
+			&__item {
+				width: 80%;
+				padding: 0;
+				margin-bottom: 30px;
+				&-number { font-size: 60px; }
+				&-text { font-size: 18px; }
+			}
+
+			&__box {
+				flex-direction: column;
+			}
+		}// &-university
+
+		&-footer {
+			margin-bottom: 90px;
+		}// &-footer
+
+		&-faq {
+			padding-bottom: 20px;
+			&__title {
+				font-size: 49px;
+				margin-bottom: 20px;
+			}
+
+			&__item {
+				font-size: 18px;
+				line-height: 28px;
+
+				&-top {
+					padding: 18px 35px 18px 0;
+
+					&:after {
+						right: 0;
+						top: 20px;
+					}
+				}
+
+				&-bottom {
+					padding: 0 40px 20px 0;
+				}
+			}
+		}// &-faq
+
+	} // 767
+
+	@media (max-width: 480px) {
+		&-header {
+			&__title {
+				font-size: 24px;
+			}
+		}
+	}
+
+
+	@media (max-width: 400px) {
+
+		&-sbs {
+			border-radius: 10px 10px 0 0;
+			background-image: url('../../img/@price/price/sbs/mobile/bg.jpg');
+			background-position: 50% 100%;
+			padding-bottom: 297px;
+		}
+
+	} // 400
+
+}

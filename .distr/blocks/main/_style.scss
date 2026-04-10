@@ -1,0 +1,327 @@
+.main {
+	background: url('../img/main/bg_main_right_blue.png') no-repeat right bottom,
+							url('../img/main/bg_main_left_blue.png') no-repeat left bottom;
+	position: relative;
+	transition: padding .1s ease;
+	z-index: 1;
+
+	&__container {
+		max-width: 1300px;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: #fff;
+		width: 66%;
+		border-left: 2px solid #2B79E5;
+		min-height: 650px;
+	}
+
+	&__intro-top {
+		background: url('../img/main/brain.gif') no-repeat right bottom;
+		background-position: bottom 20px right -5px;
+		background-size: auto 70%;
+		padding: 45px 7% 0px;
+		height: 100%;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		font: 400 24px/1em 'Mont';
+		margin: 0 0 70px -18px;
+
+		&-item {
+			margin: 0 18px;
+			position: relative;
+			font-weight: 600;
+
+			&:nth-of-type(1):after,
+			&:nth-of-type(2):after {
+				display: none;
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 25px;
+				background: #000;
+				right: -20px;
+				top: 7px;
+			}
+
+			div {
+				display: none;
+			}
+		}
+	}
+
+	&__subtitle {
+		font: 700 30px/137.8% 'Mont';
+		letter-spacing: 0.02em;
+		color: #2B79E5;
+		text-shadow: 0 0 10px #fff;
+		margin-bottom: 10px;
+	}
+
+	&__online {
+		font-family: 'Mont';
+		letter-spacing: 0.02em;
+		color: #000000;
+		font-size: 28px;
+		margin-bottom: 50px;
+		br {
+			line-height: 0;
+		}
+	}
+
+	&__overtitle {
+		font: 400 40px/1.4em 'Mont';
+		letter-spacing: .7px;
+		margin-bottom: 0;
+	}
+
+	&__title {
+		font: 900 100px/1em 'Mont';
+		text-transform: uppercase;
+		letter-spacing: 3.5px;
+		// margin-bottom: 70px;
+		margin-bottom: 0;
+		color: #1C1E2C;
+	}
+
+	&__format {
+		margin-bottom: 20px;
+		font: 600 40px/1.6em 'Mont';
+		letter-spacing: 0.02em;
+		color: #000000;
+	}
+
+	&__stat {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		border-top: 2px solid #2B79E5;
+		padding: 65px 30px 60px;
+
+		&-item {
+			display: flex;
+			align-items: flex-end;
+			max-width: 25%;
+				&-num {
+					font: 300 50px/.65em 'Mont';
+					float: left;
+					padding-right: 10px;
+				}
+
+				&-txt {
+					font: 400 16px/1em 'Mont';
+					display: block;
+					max-width: 110px;
+				}
+			}
+		}
+
+		&__form {
+			background: #fff;
+			border-left: 2px solid #2B79E5;
+			border-right: 2px solid #2B79E5;
+
+			&-header {
+			// background: url('../img/main/bg_form.jpg') no-repeat center center/ contain;
+			border-bottom: 2px solid #2B79E5;
+			height: 145px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			&_right{
+				height: 100%;
+				width: 160px;
+				border-left: 2px solid #2B79E5;
+				flex-shrink: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 15px;
+				&-pic{
+					max-width: 11px;
+					margin: 0 auto;
+				}
+				&-row{
+					display: flex;
+					justify-content: space-between;
+					p{
+						font-family: 'Mont';
+						font-size: 21px;
+						line-height: 25px;
+						color: #2B79E5;
+						margin: 0;
+					}
+				}
+			}
+			&_left{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				&-pic{
+					max-width: 90px;
+				}
+				&-text{
+					font-family: 'Mont';
+					font-size: 16.62px;
+					line-height: 19px;
+					letter-spacing: 0.2em;
+					color: #2B79E5;
+					margin-left: 32px;
+					padding-top: 15px;
+					span{
+						letter-spacing: 0.4em;
+					}
+				}
+			}
+			&_center{
+				display: none;
+			}
+		}
+	}
+
+	&__runline {
+		font: 600 26px/1em 'Mont';
+		text-transform: uppercase;
+		color: #2B79E5;
+		white-space: nowrap;
+		height: 85px;
+		border-top: 2px solid #2B79E5;
+
+		&-item {
+			display: inline-block;
+			padding: 20px 0 25px 50px;
+			letter-spacing: 0.2em;
+		}
+	}
+}
+
+.mobileBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	left: 0;
+	background: #000;
+	width: 100%;
+	z-index: 5;
+
+	&__button {
+		max-width: initial;
+		min-height: 65px;
+
+		&:focus {
+			color: #fff;
+		}
+	}
+}
+
+.main {
+
+	&.outro & {
+
+		&__stat {
+
+			&-item {
+				display: flex;
+				justify-content: center;
+
+				&:nth-of-type(1) {
+					max-width: initial;
+
+					@media ( max-width: 991px ) {
+
+						position: relative;
+						left: -20px;
+					}
+				}
+			}
+
+			@media ( max-width: 360px ) {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.main.outro {
+	padding-top: 0;
+	background: url(../img/main/bg_main_right_blue.png) no-repeat right 102px,
+	url(../img/main/bg_main_left_blue.png) no-repeat left bottom;
+
+	.main__intro {
+		width: 100%;
+		border-right: 2px solid #2B79E5;
+	}
+
+	@media ( max-width: 1280px ) {
+
+		.main__intro {
+			border-right: none;
+		}
+	}
+
+	@media ( max-width: 1024px ) {
+
+		.main__intro-top {
+			padding-bottom: 80px;
+		}
+	}
+
+	@media ( max-width: 768px ) {
+
+		.main.outro .main__intro-top{
+			padding-bottom: 80px;
+		}
+
+		.main__intro {
+			border-bottom: none;
+		}
+	}
+}
+
+
+
+.lang-en {
+	.main {
+		&__stat {
+			display: none;
+
+		}
+		&__online {
+			font-family: 'Mont';
+		}
+		&__runline {
+			display: none;
+		}
+	}
+}
+
+.main__runline.outro_bottom {
+	display: none;
+}
+
+.version-brain2023, .version-fullprice{
+	.main{
+		&__info{
+			margin-bottom: 0;
+			&-subdate{
+				margin: 30px 18px 0;
+				font-size: 35px;
+				font-weight: 600;
+			}
+		}
+
+	}
+}

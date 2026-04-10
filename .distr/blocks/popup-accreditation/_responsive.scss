@@ -1,0 +1,24 @@
+.popup-accreditation {
+	@media ( max-width: 575px ) {
+		padding: 50px 25px 25px;
+
+		&__title {
+		    font-size: 25px;
+		    line-height: 100%;
+		}
+
+		&__text {
+			font-size: 22px;
+		}
+
+		a {
+			font-size: 22px;
+		}
+	}
+}
+
+
+
+
+
+

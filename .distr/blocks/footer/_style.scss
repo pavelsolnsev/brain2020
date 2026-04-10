@@ -1,0 +1,49 @@
+.footer {
+	border-top: 2px solid #2B79E5;
+  	padding: 20px 0 20px;
+
+	&__container {
+		max-width: 1180px;
+	}
+
+	&__content {
+		display: flex;
+		font: 600 14px/1em 'Mont';
+	}
+
+	&__logo {
+		max-width: 222px;
+		margin-right: 20px;
+	}
+
+	&__right {
+		display: flex;
+		margin-left: auto;
+	}
+
+	&__copyright-link {
+		text-decoration: underline;
+		max-width: 230px;
+		height: 22px;
+		flex-grow: 1;
+		margin-left: auto;
+		margin-right: 20px;
+
+		&:hover {
+			color: #FF333F;
+			text-decoration: underline;
+		}
+	}
+
+	&__syndigital {
+		color: #2B79E5;
+		margin-right: 20px;
+		&:hover {
+			color: #FF333F;
+		}
+	}
+}
+
+
+
+

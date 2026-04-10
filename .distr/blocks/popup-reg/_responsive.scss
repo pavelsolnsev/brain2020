@@ -1,0 +1,48 @@
+@media ( max-width: 576px ) {
+
+	.popup-reg {
+
+		.form {
+
+			&__content {
+				max-width: 360px;
+				padding: 100px 40px 30px 40px;
+			}
+		}
+	}
+	.popup-presentation .form__title{
+		padding: 0;
+	}
+}
+
+@media ( max-width: 375px ) {
+
+	.popup-reg {
+
+		.form {
+			&__content {
+				padding: 100px 15px 30px 15px;
+			}
+
+			&__title {
+				font-size: 20px;
+			}
+
+			&__chekbox {
+
+				span {
+					font-size: 9px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

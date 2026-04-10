@@ -1,0 +1,24 @@
+$red: #F8006B;
+$blue: #000051;
+$lblue: #2D1CED;
+
+$font-regular: 'Mont', 'Helvetica Neue', Helvetica, sans-serif;
+$font-xcondensed: 'Mont', 'Helvetica Neue', Helvetica, sans-serif;
+$font-condensed: 'Mont', 'Helvetica Neue', Helvetica, sans-serif;
+
+// Костыли для IE11
+// @include ie11-align-center-fix;
+@mixin ie11-align-center-fix {
+	_:-ms-fullscreen, &:after {
+		content: '';
+		min-height: inherit;
+		font-size: 0;
+	}
+}
+
+// @include ie11-min-height-fix;
+@mixin ie11-min-height-fix {
+	_:-ms-fullscreen, & {
+		height: 100%;
+	}
+}

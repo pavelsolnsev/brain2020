@@ -1,0 +1,129 @@
+.header {
+	//position: fixed;  //  GlobalHeader
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	z-index: 5;
+	// border-top: 2px solid #2B79E5;
+	border-bottom: 2px solid #2B79E5;
+	background: white;
+	transition: padding .1s ease;
+
+
+
+	&__container {
+		max-width: 1180px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+		transition: padding .1s ease;
+
+		.fixmenu & {
+			padding: 7px 0;
+		}
+	}
+
+	&__logo {
+		max-width: 222px;
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		flex-grow: 1;
+		font: 900 16px/1em 'Mont';
+		margin-right: 30px;
+	}
+
+	&__phone {
+		line-height: 1.3em;
+	}
+
+	&__mail {
+		font-weight: 600;
+		line-height: 1em;
+	}
+
+	&__img {
+		display: none;
+		flex-grow: 1;
+		margin-right: 10px;
+		max-width: 20px;
+	}
+
+	&__button {
+		font: 600 14px/2em 'Mont';
+		text-transform: uppercase;
+		letter-spacing: initial;
+		max-width: 210px;
+		min-height: 35px;
+		background: #2B79E5;
+		padding: 0 25px;
+		&:hover{
+			box-shadow: 0px 1px 5px 1px rgba(45, 41, 41, 0.5);
+		}
+		&:hover, &:focus {
+			color: #FFFFFF;
+		}
+	}
+	&__nav{
+		&-link{
+			font-family: 'Mont';
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 22px;
+			color: #000000;
+			margin-left: 29px;
+			&_franch{
+				display: none;
+			}
+		}
+		&-active{
+			top: 0px;
+			right: 0;
+			width: 100%;
+			z-index: 1000;
+			padding: 24px 10px;
+			position: absolute;
+			background-color: #fff;
+			box-shadow: 0 0 20px rgba(0,0,0,0.1);
+			display: flex!important;
+			flex-direction: column;
+			align-items: center;
+		}
+		&_close-pic{
+			max-width: 17px;
+			display: none;
+			cursor: pointer;
+		}
+		&_menu{
+			display: none;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+		}
+		&-phone{
+			display: none;
+		}
+		&-button{
+			display: none;
+		}
+	}
+}
+
+.fixmenu {
+	position: fixed;
+	top: 0;
+  left: 50%;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 3px 15px 0px #6fb2b663;
+	z-index: 5;
+	transform: translateX(-50.001%);
+}

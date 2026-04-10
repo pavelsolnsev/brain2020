@@ -1,0 +1,114 @@
+.franchise{
+	font-family: 'Mont';
+	background: #1C1E2C;
+	background-image: url("../img/franchise/bg_blue.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	// padding-top: 129px;
+	// padding-bottom: 95px;
+	&:before{
+		content: '';
+		background-image: url("../img/franchise/decoration_blue.png");
+		width: 839px;
+		height: 724px;
+		position: absolute;
+		right: 4px;
+	}
+	.container{
+		max-width: 1270px;
+		border-left: 2px solid #2B79E5;
+		border-right: 2px solid #2B79E5;
+		position: relative;
+		padding-top: 129px;
+		padding-bottom: 95px;
+	}
+	&__title{
+		color: #fff;
+		text-align: left;
+		letter-spacing: 0;
+		margin: 0;
+	}
+	&__main{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 25px;
+		&-item{
+			width: 50%;
+			&_content{
+				display: flex;
+				flex-direction: column;
+				padding-left: 5%;
+			}
+			&_part{
+				display: flex;
+				align-items: center;
+				margin: 3px 0;
+				img{
+					max-width: 24px;
+					margin-right: 19px;
+				}
+				p {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 14px;
+					letter-spacing: 0.05em;
+					text-transform: uppercase;
+					color: #2B79E5;
+					margin: 0;
+					padding-right: 30px;
+				}
+			}
+		}
+	}
+	&__description{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 100px;
+		padding: 0px 25px;
+		&-item{
+			width: 50%;
+			&:last-child{
+				padding-left: 5%;
+			}
+		}
+		&-title{
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 35px;
+			color: #FFFFFF;
+			margin-bottom: 35px;
+			&_first{
+				max-width: 420px;
+			}
+		}
+		&-text{
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 30px;
+			color: #FFFFFF;
+		}
+	}
+	&__button{
+		color: #050B37;
+		background-color: #FFFFFF;
+		margin-top: 45px;
+		&:hover,
+		&:focus {
+			color: #000000;
+		}
+		&_desc{
+			display: flex;
+		}
+		&_mob{
+			display: none;
+		}
+	}
+}

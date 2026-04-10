@@ -1,0 +1,143 @@
+@media (max-width: 1300px) {
+  .headliners__main {
+    max-width: 100%;
+    border-right: none;
+    border-left: none;
+  }
+  .headliners__title, .headliners__list {
+    &::before, &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .headliners__list {
+  }
+
+  .headliners__list-item {
+    // width: 33.33%;
+    width: 50%;
+    flex-direction: column;
+    //border-right: none;
+
+    &-content {
+      padding: 30px 15px 30px;
+    }
+
+    &-photo {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-emblem {
+      margin-left: initial;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      text-align: left;
+      flex-grow: 1;
+      height: 60%;
+    }
+
+    &:nth-of-type(1) .headliners__list-item-content,
+    &:nth-of-type(3) .headliners__list-item-content {
+      justify-content: initial;
+    }
+
+    &:nth-of-type(2n) {
+      border-right: 2px solid #2B79E5;
+
+      .headliners__list-item-photo {
+        order: initial;
+      }
+    }
+  }
+
+  .headliners__list-item-content {
+    min-height: 450px;
+  }
+  .headliners__list-item-text {
+    align-self: flex-end;
+  }
+
+  .headliners__list-item_empty {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .headliners__title {
+    padding: 29px 15px 33px;
+  }
+  .headliners__list {
+    flex-direction: column;
+
+    &-item {
+      width: 100%;
+      border-right: none;
+
+      &:nth-of-type(2n) {
+        border-right: none;
+      }
+
+      &:nth-of-type(1) .headliners__list-item-content,
+      &:nth-of-type(3) .headliners__list-item-content {
+        justify-content: center;
+      }
+
+      &:nth-of-type(2n) {
+        .headliners__list-item-text {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .headliners__list-item-content {
+    min-height: 230px;
+    padding: 5px 15px 20px;
+    justify-content: center;
+  }
+  .headliners__list-item-photo {
+    min-width: 180px;
+
+    img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    }
+  }
+  .headliners__list-item-emblem {
+    width: 75px !important;
+    margin-bottom: 0;
+  }
+  .headliners__list-item-text {
+    min-height: auto;
+    text-align: center;
+  }
+  .headliners__list-item-name {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .headliners__list-item-info {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 360px) {
+  .headliners__list-item-emblem {
+  }
+  .headliners__list-item-name {
+  }
+  .headliners__list-item-info {
+    margin-bottom: 0;
+  }
+}

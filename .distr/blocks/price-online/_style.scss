@@ -1,0 +1,190 @@
+.price-online {
+	padding: 0 0 150px;
+	border-bottom: 2px solid #2B79E5;
+
+	.container {
+		max-width: 1280px;
+	}
+	&__info{
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	&__title {
+		margin-bottom: 50px;
+		padding-top: 80px;
+	}
+	&__scheme{
+		font-size: 24px;
+		line-height: 130%;
+		text-align: right;
+		text-decoration-line: underline;
+		color: #1C1E2C;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.price-online__item {
+			margin-right: 25px;
+		}
+		&-bottom {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			.price-online__item {
+				margin-right: 25px;
+			}
+		}
+	}
+
+	&__item {
+		width: 32%;
+		border: 2px solid #2B79E5;
+		margin-bottom: 2%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		&_wide {
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&-title {
+			display: flex;
+			border-bottom: 2px solid #2B79E5;
+
+			&_wide {
+				width: 70%;
+				border-bottom: 0;
+			}
+
+			&-txt {
+				width: 65%;
+				font-size: 20px;
+				letter-spacing: 3.3px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				&_wide {
+					width: 100%;
+					display:block;
+					font-family: 'Mont';
+					font-size: 20px;
+					line-height: 23px;
+					letter-spacing: 0.2em;
+					text-transform: uppercase;
+					color: #1C1E2C;
+					font-weight: 900;
+					margin-bottom: 15px;
+				}
+		
+			}
+
+			&-img {
+				width: 35%;
+				border-left: 2px solid #2B79E5;
+
+				&_wide {
+					display: flex;
+					align-items: center;
+					width: 15%;
+					height: auto;
+					border-left: 0;
+					border-right: 2px solid #2B79E5;
+				}
+			}
+
+		}
+
+		&-head {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 85%;
+			padding: 55px 50px;
+			border-right: 2px solid #2B79E5;
+			text-align: left;
+		}
+
+		&-container {
+			padding: 40px;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		&-list {
+			font: 400 15px/18px 'Mont';
+			list-style-type: none;
+			flex-grow: 1;
+			padding: 40px;
+
+			&_wide {
+				flex-grow: 0;
+				padding: 0;
+				margin: 0;
+			}
+
+			&_hidden {
+				display: none;
+			}
+
+			&-item {
+				margin-bottom: 10px;
+			}			
+		}
+
+		&-price {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 30%;
+		}
+
+		&-cost {
+			font: 900 34px/1em 'Mont';
+			letter-spacing: 5px;
+			color: #2B79E5;
+			padding: 0 40px 20px;
+			white-space: nowrap;
+		}
+
+		&-button {
+			margin: 0 auto 60px;
+			max-width: 80%;
+
+			&_wide {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__tnx {
+		padding: 95px 0;
+		border-bottom: 2px solid #2B79E5;
+
+		&-description{
+			font-family: 'Mont';
+			font-size: 28px;
+			line-height: 150%;
+			text-align: center;
+			margin: 0 auto;
+			color: #000000;
+			max-width: 1095px;
+		}
+	}
+
+}
+
+
+
+

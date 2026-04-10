@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+	.popup-price {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__name {
+			font-size: 36px;
+		}		
+		&__info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 385px;
+		}
+		&__form {
+			position: relative;
+			padding: 20px;
+			border-left: 2px solid #2B79EC;
+
+			&::after {
+				display: none;
+			}
+		}
+		&__price {
+			font-size: 35px;
+			margin-top: 70px;
+		}
+	}
+}

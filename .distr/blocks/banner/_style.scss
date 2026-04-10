@@ -1,0 +1,74 @@
+.banner {
+    padding-top: 55px;
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__content {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin: 0 -15px;
+            padding: 0;
+
+            li {
+                display: block;
+                text-align: center;
+                max-width: 33.3%;
+                width: 100%;
+                flex: 0 0 33.3%;
+                padding: 20px 15px;
+                img {
+                    margin-bottom: 14px;
+                }
+                p {
+                    font-family: "Mont";
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 124%;
+                    letter-spacing: 0.02em;
+                    color: #050b37;
+                    text-align: left;
+                    padding-left: 40px;
+                    margin: 0;
+                }
+            }
+        }
+
+        &-title {
+            font-family: "mont";
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 107%;
+            letter-spacing: 0.02em;
+            color: #050b37;
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            font-family: "mont";
+            font-weight: 700;
+            font-size: 28.2372px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #050b37;
+            margin-bottom: 20px;
+        }
+    }
+
+    .form_reg_3 {
+        .form {
+            &__title {
+                text-align: left;
+            }
+
+            &__button {
+                color: #fff;
+            }
+
+            .form__chekbox-2 {
+                display: none;
+            }
+        }
+    }
+}

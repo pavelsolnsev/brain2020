@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+
+	//section:not(.main):not(.header):not(.footer):not(.popup-reg):not(.popup-thanks) {
+	//	padding: 10vw 0 !important;
+	//}
+}
+
+@media (max-width: 576px) {
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title-com {
+		font-size: 6vw;
+		line-height: 6vw;
+	}
+
+	// Перестановка блоков местами на мобильной версии
+	.header {order: 1;}
+	.intro {order: 2;}
+	.main__runline_top {order: 3;}
+	.description {order: 4;}
+	.themes {order: 5;}
+	.headliners {order: 6;}
+	.speakers {order: 7;}
+	.fullprice {order: 8;}
+	.gallery {order: 9;}
+	.chatbot-short {order: 10;}
+	.vtb {order: 11;}
+	.panel_discussion {order: 12;}
+	.expectations {order: 13;}
+	.marathon {order: 14;}
+	.discussion {order: 15;}
+	.place {order: 16;}
+	.diving {order: 17;}
+	.banner {order: 18;}
+	.organizer {order: 19;}
+	.partners {order: 20;}
+	.vtb {order: 21;}
+	.franchise {order: 22;}
+	.chatbot {order: 23;}
+	.form_reg_3 {order: 24;}
+	.outro {order: 25;}
+	.main__runline_bottom {order: 26;}
+	.intro.outro_bottom {order: 27;}
+	.footer {order: 28;}
+	.price {order: 2;}
+}
